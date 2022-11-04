@@ -27,8 +27,9 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let vehiculo of vehiculos">
-            <th scope="row">{{ vehiculo.id }}</th>
+          <tr *ngFor="let vehiculo of vehiculos, let indexVehiculo = index">
+            <!-- <th scope="row">{{ vehiculo.id }}</th> -->
+            <th scope="row">{{ indexVehiculo + 1 }}</th>
             <td>{{ vehiculo.marca }}</td>
             <td>{{ vehiculo.linea }}</td>
             <td>{{ vehiculo.modelo }}</td>
@@ -36,15 +37,22 @@
         </tbody>
       </table>
     </div>
+    <!--Summary of brands-->
+    <div class="row" id="summary-brands">
+      <div class="container-fluids">
+        <p *ngFor="let marca of listMarcas"><strong>Total {{ marca[0] }}:</strong> {{ marca[1] }}</p>
+      </div>
+    </div>
   </div>
+
   <!--Application footer-->
   <div class="row">
-    <footer>
-      <div class="container">
-        <div class="text-center" id="copy-right">
+    <div class="container" id="application-footer">
+      <footer>
+        <div class="text-center">
           Contact us: +57 3102105253 - info@tusegundazo.com - @tusegundazo
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </div>
 </div>
