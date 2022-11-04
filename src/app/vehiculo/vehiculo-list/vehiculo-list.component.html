@@ -1,0 +1,50 @@
+<div class="container">
+  <!--Application main title-->
+  <div class="row">
+    <div class="container text-left">
+      <h2 id="main-title">TuSegundazo.com</h2>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <!--Application main image-->
+    <div class="container">
+      <img src="https://drive.google.com/uc?export=view&id=1H00CpAtCv7mqzk9x3TV_TbVjZXeqlh4C" class="img-fluid"
+        alt="Banner App TuSegundazo.com" />
+    </div>
+  </div>
+  <hr>
+  <!--Data table-->
+  <div class="row">
+    <div class="container table-margin">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th class="th-style" cope="row">#</th>
+            <th class="th-style" cope="row">Marca</th>
+            <th class="th-style" cope="row">Línea</th>
+            <th class="th-style" cope="row">Modelo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let vehiculo of vehiculos">
+            <th scope="row">{{ vehiculo.id }}</th>
+            <td>{{ vehiculo.marca }}</td>
+            <td>{{ vehiculo.linea }}</td>
+            <td>{{ vehiculo.modelo }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!--Application footer-->
+  <div class="row">
+    <footer>
+      <div class="container">
+        <div class="text-center" id="copy-right">
+          Contact us: +57 3102105253 - info@tusegundazo.com - @tusegundazo
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>

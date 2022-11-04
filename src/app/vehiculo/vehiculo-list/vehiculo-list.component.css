@@ -1,0 +1,35 @@
+img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    margin: 1%;
+}
+
+.table-margin {
+    margin: 1%;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+tr:hover {
+    padding: 8px;
+    background-color: rgb(191, 208, 248);
+}
+
+hr {
+    border: 2px solid rgb(95, 96, 99);
+    margin: 0 auto;
+}
+
+.th-style {
+    background-color: rgb(18, 19, 19);
+    color: white;
+}
+
+footer {
+    margin: 5px;
+}
