@@ -28,11 +28,10 @@
         </thead>
         <tbody>
           <tr *ngFor="let vehiculo of vehiculos, let indexVehiculo = index">
-            <!-- <th scope="row">{{ vehiculo.id }}</th> -->
             <th scope="row">{{ indexVehiculo + 1 }}</th>
-            <td>{{ vehiculo.marca }}</td>
-            <td>{{ vehiculo.linea }}</td>
-            <td>{{ vehiculo.modelo }}</td>
+            <td id="vehicle-brand">{{ vehiculo.marca }}</td>
+            <td id="vehicle-line">{{ vehiculo.linea }}</td>
+            <td id="vehicle-model">{{ vehiculo.modelo }}</td>
           </tr>
         </tbody>
       </table>
